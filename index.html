@@ -434,7 +434,7 @@
       var message = encodeURIComponent("I have encountered error code 502. Please provide an alternative link.");
 
       // Check if WhatsApp is installed
-      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      if (/Android|webOS|iPhone|IEMobile|Opera|Chrome|Google Chrome/i.test(navigator.userAgent)) {
         // For mobile devices
         window.location.href = 'https://api.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message;
       } else {
